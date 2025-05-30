@@ -620,7 +620,7 @@ div[role="progressbar"]::before {
   border-radius: 20px;
   top: 5px;
   height: 28px;
-  right: 44px;
+  right: 20px;
 }
 
 .searchInput {
