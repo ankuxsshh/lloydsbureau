@@ -19,8 +19,8 @@
   </li>
   <li class="nav-item navItem1 ms-auto">
     <div class="searchBox">
-      <span class="searchOverlayText" style="margin: 10px; color: #0C334A;"> search</span>
-      <input class="searchInput" type="text" name="" placeholder="">
+      <span class="searchOverlayText" id="searchLabel" style="margin: 10px; color: #0C334A;">search</span>
+      <input class="searchInput" id="searchInput" type="text" placeholder="">
       <button class="searchButton">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
@@ -271,9 +271,23 @@
   }
 
   .card-text {
-    color: #ffffff;
+    color: #0C334A;
     font-size: 15px;
     transition: color 0.3s ease;
   }
 </style>
+<script>
+  const input = document.getElementById('searchInput');
+  const label = document.getElementById('searchLabel');
+
+  input.addEventListener('focus', () => {
+    label.style.display = 'none';
+  });
+
+  input.addEventListener('blur', () => {
+    if (!input.value.trim()) {
+      label.style.display = 'inline';
+    }
+  });
+</script>
 {% endblock %}
