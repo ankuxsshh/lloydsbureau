@@ -465,12 +465,12 @@ body {
 }
 
 .card.cardCourse {
-    background: #f8fcfe;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
-    color: #0e344b;
-    border-radius: 10px;
-    border: none;
-    transition: transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+  background: #f8fcfe;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+  color: #0e344b;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 .card.cardCourse:hover {
@@ -1134,7 +1134,7 @@ h1 {
   display: inline-block;
   color: #ffffff;
   text-decoration: none;
-  padding: 8px 17px;
+  padding: 8px 14px;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   text-align: center;
@@ -1524,7 +1524,3 @@ h9 {
   margin-inline-start: auto;
   text-align: end;
 }
-
-
-
-
